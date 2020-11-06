@@ -54,6 +54,7 @@ f = open("keys for tree.txt")
 keys_ = f.readlines()
 keys = [i.strip() for i in keys_]
 r = Node(keys[0])
+f.close()
 
 for i in range(1,len(keys)):
     binary_insert(r, Node(keys[i]))
